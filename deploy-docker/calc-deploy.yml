@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of Calculator
+  hosts: all
+  tasks:
+    - name: Pull image
+      docker_image:
+        name: shuddd/mini-project
+        source: pull
