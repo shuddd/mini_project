@@ -5,7 +5,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Git pull ') {
+        stage('Git pull') {
             steps {
                 git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/shuddd/mini_project'
             }
